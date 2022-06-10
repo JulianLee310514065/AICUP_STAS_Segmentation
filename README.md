@@ -7,6 +7,7 @@
 
 ```
 pip install monai
+pip install adabelief-pytorch==0.2.0
 pip install xxx
 pip install xxx
 ```
