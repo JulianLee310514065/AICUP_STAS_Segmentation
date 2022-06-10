@@ -1,7 +1,7 @@
 # AICUP_STAS_Segmentation
 
 # 介紹:
-這次有幸可以得到Private第七的分數，我在這裡分享我程式碼，我的最佳模型是三個模型的ensemble，當初在訓練的時候，我是三個模型**各自訓練**，並使用PIL與numpy函式庫來進行ensemble的處理，所以我這裡會分享三份Jupyter notebook與三份模型，並額外付上當初做ensemble的程式。
+這次有幸可以得到Private第七的分數，在這裡分享我程式碼，我的最佳模型為三個模型的voting ensemble，當初在訓練的時候，我是三個模型**各自訓練**，並使用PIL與numpy函式庫來進行ensemble的處理，所以我這裡會分享三份Jupyter notebook與三份模型，並額外付上voting ensemble的程式。
 
 # 環境與套包
 
@@ -23,10 +23,11 @@ Ensemble|Voting Ensemble|--4-|-|
 # 使用說明
 
 ### 模型訓練(train)
-123
-
+123 
+牽著手
 ### 模型預測(test)
 456
-
+抬起頭
 ### Ensemble Code
 789
+我們私奔到月球
