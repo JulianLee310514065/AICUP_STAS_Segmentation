@@ -1,1 +1,1 @@
-# AICUP_-STAS_Segmentation
+# AICUP_STAS_Segmentation
