@@ -35,7 +35,7 @@ sudo apt-get install libsm6 libxrender1 libfontconfig1 libgl1-mesa-glx
 
 # 模型與權重
 
-類別|模型名稱/用途|Jupyter Notebook|權重檔|結果|
+類別|模型名稱/用途|Jupyter Notebook|權重檔|模型預測結果|
 --|--|--|--|--|
 Label前處理|json to png|[DataPreprocess.ipynb](https://github.com/JulianLee310514065/AICUP_STAS_Segmentation/blob/main/DataPreprocess.ipynb)|-|
 模型一|DeepLabV3Plus + tf_efficientnetv2_m_in21ft1k|[tf_efficientnetv2_m_in21ft1k.ipynb](https://github.com/JulianLee310514065/AICUP_STAS_Segmentation/blob/main/tf_efficientnetv2_m_in21ft1k.ipynb)|[tf_efficientnetv2_m_in21ft1k.pth](https://drive.google.com/file/d/1R8ez_bH2H5KsshnWdeA4rcYTcUcqbHhD/view?usp=sharing)|[模型一結果](https://github.com/JulianLee310514065/AICUP_STAS_Segmentation/blob/main/Result/tf_efficientnetv2_m_in21ft1k_origin.zip)|
