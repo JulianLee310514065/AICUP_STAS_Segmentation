@@ -7,9 +7,13 @@
 
 ```
 pip install monai
+pip install -U Setuptools
+pip install git+https://github.com/qubvel/segmentation_models.pytorch
 pip install adabelief-pytorch==0.2.0
-pip install xxx
-pip install xxx
+
+#如果沒有PyTorch的話
+pip install torch
+pip install torchvision
 ```
 
 ### 如果遇到smp無法使用，有可能是Jupyter Notebook的問題，執行:
@@ -31,9 +35,10 @@ sudo apt-get install libsm6 libxrender1 libfontconfig1 libgl1-mesa-glx
 
 # 模型與權重
 
-類別|模型名稱|Jupyter Notebook|權重檔|
+類別|模型名稱/用途|Jupyter Notebook|權重檔|
 --|--|--|--|
-模型一|DeepLabV3Plus + tf_efficientnetv2_m_in21ft1k|--1-|[tf_efficientnetv2_m_in21ft1k.pth](https://drive.google.com/file/d/1R8ez_bH2H5KsshnWdeA4rcYTcUcqbHhD/view?usp=sharing)|
+Label前處理|json to png|[DataPreprocess.ipynb](https://github.com/JulianLee310514065/AICUP_STAS_Segmentation/blob/main/DataPreprocess.ipynb)|-|
+模型一|DeepLabV3Plus + tf_efficientnetv2_m_in21ft1k|[tf_efficientnetv2_m_in21ft1k.ipynb](https://github.com/JulianLee310514065/AICUP_STAS_Segmentation/blob/main/tf_efficientnetv2_m_in21ft1k.ipynb)|[tf_efficientnetv2_m_in21ft1k.pth](https://drive.google.com/file/d/1R8ez_bH2H5KsshnWdeA4rcYTcUcqbHhD/view?usp=sharing)|
 模型二|DeepLabV3Plus + tu-eca_nfnet_l2|--2-|[tu-eca_nfnet_l2_DeepLabV3Plus.pth](https://drive.google.com/file/d/1Cbgkb0SNsghGo8x0SgHgYPR9kAbOJjLA/view?usp=sharing)|
 模型三|DeepLabV3Plus + tu-tf_efficientnet_b6_ns|--3-|[tu-tf_efficientnet_b6_ns.pth](https://drive.google.com/file/d/1lkkzq2SbDvxgvNDKGoGMiRDNEZ7399Cm/view?usp=sharing)|
 Ensemble|Voting Ensemble|--4-|-|
