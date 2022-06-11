@@ -12,6 +12,23 @@ pip install xxx
 pip install xxx
 ```
 
+### 如果遇到smp無法使用，有可能是Jupyter Notebook的問題，執行:
+
+```
+pip install ipywidgets widgetsnbextension
+jupyter nbextension enable --py widgetsnbextension
+```
+### 如果是`import cv2`的問題，我自己在兩個不同的伺服器上遇到過
+
+```
+#第一種解法: 降低版本 (NVIDIA DLI Server可行)
+pip install opencv-python==3.4.5.20
+
+#第二種解法: 升級一些東西 (TWCC可行)
+sudo apt update
+sudo apt-get install libsm6 libxrender1 libfontconfig1 libgl1-mesa-glx
+```
+
 # 模型與權重
 
 類別|模型名稱|Jupyter Notebook|權重檔|
