@@ -34,6 +34,7 @@ sudo apt-get install libsm6 libxrender1 libfontconfig1 libgl1-mesa-glx
 ```
 
 # 模型與權重
+權重檔皆存放於Google雲端，可自行下載使用
 
 類別|模型名稱/用途|Jupyter Notebook|權重檔|模型預測結果|
 --|--|--|--|--|
@@ -106,7 +107,7 @@ path2 = "{Predict Path2}"
 path3 = "{Predict Path3}"
 ```
 
-此外還要注意的是做Ensemble的照片必須是 1 Channel，即 (1716, 942, 1)，如不是則必須修改程式。
+此外還要注意的是做Ensemble的照片通道數需統一，即 (1716, 942, 1) 或 (1716, 942, 3)，如不是則必須修改程式，建議全部改為單一通道。
 
 1 Channel
 ```
