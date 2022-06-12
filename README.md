@@ -45,16 +45,68 @@ Ensemble|Voting Ensemble|[Image_ensemble.ipynb](https://github.com/JulianLee3105
 
 # 使用說明
 
-### 模型訓練(train)
-123 
-牽著手
-### 模型預測(test)
-456
-抬起頭
-### Ensemble Code
-789
-我們私奔到月球
+### 前處理
+需修改資料夾，資料夾內需包含Labelme之.json檔
 
+```
+folder_path = "SEG_Train_Datasets/Train_Annotations/"
+os.listdir(folder_path)[:5]
+```
+
+### 模型訓練以及驗證
+需修改資料夾如下圖`SEG_Train_Datasets`，資料夾內需放子資料夾`Train_Images`及`Train_Annotations_png`，前者存放訓練Image後者存放訓練Mask
+
+```
+SEG_Train_Datasets
+        |-> Train_Images
+        |-> Train_Annotations_png
+```
+
+驗證時除了需確認驗證圖片的檔案位置，還須修改權重路徑到你權重下載的位置
+
+```
+model.load_state_dict(torch.load("{YOUR PATH}"))
+```
+
+改驗證圖片路徑
+```
+tempdir = "./Public_Image/"  or  
+tempdir = "./Pravite_Image1/"
+```
+
+此外因為我三個模型各自的預測結果圖都是預設存到同目錄底下`./Predict`資料夾，所以同時跑三個模型時輸出會被蓋掉，可在模型輸出處做修改
+```
+saverPD = SaveImage(output_dir="{YOUR PATH}", output_ext=".png", output_postfix=f"{Pub_data[i].split('/')[-1].split('.')[0]}",scale=255,separate_folder=False)
+saverPD(test_outputs[0].cpu())
+```
+
+
+### Ensemble Code
+Ensemble時也需要注意三個的檔案位置
+
+```
+path1 = "{Predict Path1}"
+path2 = "{Predict Path2}"
+path3 = "{Predict Path3}"
+```
+
+此外還要注意的是做Ensemble的照片必須是 1 Channel，即 (1716, 942, 1)，如不是則必須修改程式。
+
+1 Channel
+```
+img1 = Image.open(os.path.join(path1, filename))
+img1_ar = np.asarray(img1)
+img1_ar = np.where(img1_ar > 0, 1, 0)
+
+```
+
+3 or more Channel
+```
+img1 = Image.open(os.path.join(path1, filename))
+img1_ar = np.asarray(img1)
+img1_ar = np.where(img1_ar[:, :, 0] > 0, 1, 0)
+
+```
 
 # Run on Colab
 
