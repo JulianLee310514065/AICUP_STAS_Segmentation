@@ -131,7 +131,8 @@ img1_ar = np.where(img1_ar[:, :, 0] > 0, 1, 0)
 ```
 
 # Run on Colab
+程式範例展示，因為Colab的環境與GPU數量與當初訓練使用時不同，最後結果也會不同，請勿使用此Colab檔案來驗證權重及輸出等，若要驗證權重或模型等資訊，請使用**相同的環境**。
 
 [Colab](https://colab.research.google.com/drive/1uStw2mKnpq3j8E4Tpf7qy8zx2QAVY1nZ?usp=sharing)
 
-程式範例展示，因為Colab的環境與GPU數量與當初訓練使用時不同，最後結果也會不同，請勿使用此Colab檔案來驗證權重及輸出等，若要驗證權重或模型等資訊，請使用**相同的環境**。
+
