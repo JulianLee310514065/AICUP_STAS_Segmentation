@@ -1,7 +1,7 @@
 # AICUP_STAS_Segmentation
 
 # 介紹:
-這次aicup比賽得到Private第七的分數，在這裡分享我程式碼，我的最佳模型為三個模型的Voting Ensemble，當初在訓練的時候，我是三個模型**各自訓練**，並使用PIL與numpy函式庫來進行Ensemble的處理，所以我這裡會分享三份Jupyter Notebook與三份模型，並額外付上Voting Ensemble的程式。
+這次aicup比賽得到Private第七的分數，在這裡分享我程式碼，我的最佳模型為三個模型的Voting Ensemble，當初在訓練的時候，我是三個模型**各自訓練**，並使用PIL與numpy函式庫來進行Ensemble的處理，所以我這裡會分享三份Jupyter Notebook與三份模型，並額外付上Voting Ensemble的程式，然後如果程式使用上有什麼問題或Bug，也歡迎在Issues區留言提問。
 
 # 環境與套包
 
@@ -46,20 +46,38 @@ Ensemble|Voting Ensemble|[Image_ensemble.ipynb](https://github.com/JulianLee3105
 # 使用說明
 
 ### 前處理
-需修改資料夾，資料夾內需包含Labelme之.json檔
+需修改資料夾，資料夾內需包含LabelMe之.json檔
 
 ```
+folder_path = "{YOUR PATH}"
+
+如 : 
 folder_path = "SEG_Train_Datasets/Train_Annotations/"
 os.listdir(folder_path)[:5]
 ```
 
 ### 模型訓練以及驗證
-需修改資料夾如下圖`SEG_Train_Datasets`，資料夾內需放子資料夾`Train_Images`及`Train_Annotations_png`，前者存放訓練Image後者存放訓練Mask
-
+需修改訓練圖片之資料夾
 ```
+data_path = "{YOUR PATH}"
+```
+
+如下之`SEG_Train_Datasets`，資料夾內需放子資料夾`Train_Images`及`Train_Annotations_png`，前者存放訓練Image後者存放訓練Mask
+```
+data_path = './SEG_Train_Datasets/'
+
 SEG_Train_Datasets
         |-> Train_Images
         |-> Train_Annotations_png
+```
+>
+
+改驗證圖片路徑
+```
+tempdir = "{YOUR PATH}"  
+
+如:
+tempdir = "./Pravite_Image1/"
 ```
 
 驗證時除了需確認驗證圖片的檔案位置，還須修改權重路徑到你權重下載的位置
@@ -68,11 +86,9 @@ SEG_Train_Datasets
 model.load_state_dict(torch.load("{YOUR PATH}"))
 ```
 
-改驗證圖片路徑
-```
-tempdir = "./Public_Image/"  or  
-tempdir = "./Pravite_Image1/"
-```
+
+
+>
 
 此外因為我三個模型各自的預測結果圖都是預設存到同目錄底下`./Predict`資料夾，所以同時跑三個模型時輸出會被蓋掉，可在模型輸出處做修改
 ```
