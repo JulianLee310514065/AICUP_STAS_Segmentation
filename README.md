@@ -54,3 +54,10 @@ Ensemble|Voting Ensemble|[Image_ensemble.ipynb](https://github.com/JulianLee3105
 ### Ensemble Code
 789
 我們私奔到月球
+
+
+# Run on Colab
+
+[Colab](https://colab.research.google.com/drive/1uStw2mKnpq3j8E4Tpf7qy8zx2QAVY1nZ?usp=sharing)
+
+程式範例展示，因為Colab的環境與GPU數量與當初訓練使用時不同，最後結果也會不同，請勿使用此Colab檔案來驗證權重及輸出等，若要驗證權重或模型等資訊，請使用**相同的環境**。
