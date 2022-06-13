@@ -73,8 +73,8 @@ data_path = "{YOUR PATH}"
 data_path = './SEG_Train_Datasets/'
 
 SEG_Train_Datasets
-        |-> Train_Images
-        |-> Train_Annotations_png
+        ↳ Train_Images
+        ↳ Train_Annotations_png
 ```
 >
 
