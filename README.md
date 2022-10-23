@@ -58,7 +58,7 @@ Ensemble|Voting Ensemble|[Image_ensemble.ipynb](https://github.com/JulianLee3105
 ```
 folder_path = "{YOUR PATH}"
 
-如 : 
+# 如 : 
 folder_path = "SEG_Train_Datasets/Train_Annotations/"
 os.listdir(folder_path)[:5]
 ```
@@ -98,7 +98,7 @@ model.load_state_dict(torch.load("{YOUR PATH}"))
 >
 
 此外因為我三個模型各自的預測結果圖都是預設存到同目錄底下`./Predict`資料夾，所以同時跑三個模型時輸出會被蓋掉，可在模型輸出處做修改
-```
+```python
 saverPD = SaveImage(output_dir="{YOUR PATH}", output_ext=".png", output_postfix=f"{Pub_data[i].split('/')[-1].split('.')[0]}",scale=255,separate_folder=False)
 saverPD(test_outputs[0].cpu())
 ```
@@ -107,7 +107,7 @@ saverPD(test_outputs[0].cpu())
 ### Ensemble Code
 Ensemble時也需要注意三個的檔案位置
 
-```
+```python
 path1 = "{Predict Path1}"
 path2 = "{Predict Path2}"
 path3 = "{Predict Path3}"
@@ -116,7 +116,7 @@ path3 = "{Predict Path3}"
 此外還要注意的是做Ensemble的照片通道數需統一，即 (1716, 942, 1) 或 (1716, 942, 3)，如不是則必須修改程式，建議全部改為單一通道。
 
 1 Channel
-```
+```python
 img1 = Image.open(os.path.join(path1, filename))
 img1_ar = np.asarray(img1)
 img1_ar = np.where(img1_ar > 0, 1, 0)
@@ -124,7 +124,7 @@ img1_ar = np.where(img1_ar > 0, 1, 0)
 ```
 
 3 or more Channel
-```
+```python
 img1 = Image.open(os.path.join(path1, filename))
 img1_ar = np.asarray(img1)
 img1_ar = np.where(img1_ar[:, :, 0] > 0, 1, 0)
