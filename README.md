@@ -4,6 +4,11 @@
 # 介紹:
 這次aicup比賽得到Private第七的分數，在這裡分享我程式碼，我的最佳模型為三個模型的Voting Ensemble，當初在訓練的時候，我是三個模型**各自訓練**，並使用PIL與numpy函式庫來進行Ensemble的處理，所以我這裡會分享三份Jupyter Notebook與三份模型，並額外付上Voting Ensemble的程式，然後如果程式使用上有什麼問題或Bug，也歡迎在Issues區留言提問。
 
+# Leaderboard
+Public Score|Private|
+--|--|
+4/307|7/307|
+
 # 環境與套包
 訓練環境
 ```
@@ -136,8 +141,4 @@ img1_ar = np.where(img1_ar[:, :, 0] > 0, 1, 0)
 
 [Colab](https://colab.research.google.com/drive/1uStw2mKnpq3j8E4Tpf7qy8zx2QAVY1nZ?usp=sharing)
 
-# 比賽結果
 
-Public Score|Private|Finall|
---|--|--
-第四|第七|佳作(8~17名)
