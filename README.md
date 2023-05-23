@@ -1,4 +1,4 @@
-# AICUP_STAS_Segmentation]
+# AICUP_STAS_Segmentation
 > 深度學習課程期中考[(Link)](https://tbrain.trendmicro.com.tw/Competitions/Details/21)
 
 # 介紹:
@@ -7,7 +7,7 @@
 # Leaderboard
 |Public score|Public Rank|Public score|Private Rank|
 |--|--|--|--|
-|0.898982|4/307|0.916327|7/307|
+|0.898982|4 / 307|0.916327|7 / 307|
 
 # 環境與套包
 訓練環境
