@@ -14,8 +14,12 @@
 
 ## 更新
 最後結果: 
+
 **第14名**
 
+<div align="center">
+	<img src="https://github.com/JulianLee310514065/AICUP_STAS_Segmentation/blob/main/%E9%A0%81%E9%9D%A2%E6%93%B7%E5%8F%96%E8%87%AA-%E8%82%BA%E8%85%BA%E7%99%8C%E7%AB%B6%E8%B3%BDII-%E6%95%99%E8%82%B2%E9%83%A8%E5%85%A8%E5%9C%8B%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E7%AB%B6%E8%B3%BD(AI%20CUP%202022)%20.jpg" alt="final" width="600">
+</div>
 
 
 # 環境與套包
