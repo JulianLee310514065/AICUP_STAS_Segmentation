@@ -18,11 +18,12 @@
 **第十四名**
 
 <div align="center">
-	<img src="https://github.com/JulianLee310514065/AICUP_STAS_Segmentation/blob/main/cup.png" alt="final" width="600">
-</div>
-<div align="center">
 	<img src="https://github.com/JulianLee310514065/AICUP_STAS_Segmentation/blob/main/aicup.png" alt="final" width="600">
 </div>
+<div align="center">
+	<img src="https://github.com/JulianLee310514065/AICUP_STAS_Segmentation/blob/main/cup.png" alt="final" width="600">
+</div>
+
 
 
 # 環境與套包
