@@ -1,5 +1,5 @@
 # AICUP_STAS_Segmentation
-> **深度學習課程期中考網站**[**(Link)**](https://tbrain.trendmicro.com.tw/Competitions/Details/22)
+> **競賽網站**[**(Link)**](https://tbrain.trendmicro.com.tw/Competitions/Details/22)
 >
 > **完整程式說明報告**[**(Link)**](https://github.com/JulianLee310514065/AICUP_STAS_Segmentation/blob/main/%E7%A8%8B%E5%BC%8F%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6_%E8%82%BA%E8%85%BA%E7%99%8CII_TEAM_1015.pdf)
 
