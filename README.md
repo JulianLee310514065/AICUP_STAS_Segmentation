@@ -1,16 +1,24 @@
 # AICUP_STAS_Segmentation
-> 深度學習課程期中考[(Link)](https://tbrain.trendmicro.com.tw/Competitions/Details/22)
+> **深度學習課程期中考網站**[**(Link)**](https://tbrain.trendmicro.com.tw/Competitions/Details/22)
+>
+> **完整程式說明報告**[**(Link)**](https://github.com/JulianLee310514065/AICUP_STAS_Segmentation/blob/main/%E7%A8%8B%E5%BC%8F%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6_%E8%82%BA%E8%85%BA%E7%99%8CII_TEAM_1015.pdf)
 
 此比賽為AUCUP 2022 肺腺癌病理切片影像之腫瘤氣道擴散偵測競賽 II：運用影像分割作法於切割STAS輪廓之程式碼上傳區。
 
+
 # 介紹:
 這次aicup比賽得到Private第七的分數，在這裡分享我程式碼，我的最佳模型為三個模型的Voting Ensemble，當初在訓練的時候，我是三個模型**各自訓練**，並使用PIL與numpy函式庫來進行Ensemble的處理，所以我這裡會分享三份Jupyter Notebook與三份模型，並額外付上Voting Ensemble的程式，然後如果程式使用上有什麼問題或Bug，也歡迎在Issues區留言提問。
+
+
 
 # Leaderboard
 |Public Score|Public Rank|Public Score|Private Rank|
 |--|--|--|--|
 |0.898982|4 / 307|0.916327|7 / 307|
+
+
 ---
+
 
 ## 更新
 最後結果: 
