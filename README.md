@@ -3,7 +3,7 @@
 >
 > **完整程式說明報告**[**(Link)**](https://github.com/JulianLee310514065/AICUP_STAS_Segmentation/blob/main/%E7%A8%8B%E5%BC%8F%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6_%E8%82%BA%E8%85%BA%E7%99%8CII_TEAM_1015.pdf)
 
-此比賽為AUCUP 2022 肺腺癌病理切片影像之腫瘤氣道擴散偵測競賽 II：運用影像分割作法於切割STAS輪廓之程式碼上傳區。
+此比賽為AICUP 2022 肺腺癌病理切片影像之腫瘤氣道擴散偵測競賽 II：運用影像分割作法於切割STAS輪廓之程式碼上傳區。
 
 
 # 介紹:
