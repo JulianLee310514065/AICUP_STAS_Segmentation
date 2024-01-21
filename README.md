@@ -4,7 +4,9 @@
 > **完整程式說明報告**[**(Link)**](https://github.com/JulianLee310514065/AICUP_STAS_Segmentation/blob/main/%E7%A8%8B%E5%BC%8F%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6_%E8%82%BA%E8%85%BA%E7%99%8CII_TEAM_1015.pdf)
 
 
-此比賽AICUP 2022 肺腺癌病理切片影像之腫瘤氣道擴散偵測競賽 II：運用影像分割作法於切割STAS輪廓之目的，是要我們透過肺腺癌患者的病理切片，找出腫瘤細胞擴散(spread through air spaces, STAS)之區域，官方同時為此舉辦兩個競賽，分別為圖像偵測(Object Detection)與語意分割(Semantic Segmentation)，而我參加的是語意分割的部分。比賽提供了超過一千張肺腺癌患者的彩色病理切片照片，同時配對了相同數量的JSON檔，裡面標註STAS的區域之位置點座標，參賽者的挑戰在於透過這些資料盡可能訓練出高效的語意分割模型，以精確地標記出腫瘤的位置。這次aicup比賽得到Private第七的分數，我的最佳模型為三個模型的Voting Ensemble，當初在訓練的時候，我是三個模型**各自訓練**，並使用PIL與numpy函式庫來進行Ensemble的處理，所以我這裡會分享三份Jupyter Notebook與三份模型，並額外付上Voting Ensemble的程式，然後如果程式使用上有什麼問題或Bug，也歡迎在Issues區留言提問。
+此比賽AICUP 2022 肺腺癌病理切片影像之腫瘤氣道擴散偵測競賽 II：運用影像分割作法於切割STAS輪廓之目的，是要我們透過肺腺癌患者的病理切片，找出腫瘤細胞擴散(spread through air spaces, STAS)之區域，官方同時為此舉辦兩個競賽，分別為圖像偵測(Object Detection)與語意分割(Semantic Segmentation)，而我參加的是語意分割的部分。比賽提供了超過一千張肺腺癌患者的彩色病理切片照片，同時配對了相同數量的JSON檔，裡面標註STAS的區域之位置點座標，參賽者的挑戰在於透過這些資料盡可能訓練出高效的語意分割模型，以精確地標記出腫瘤的位置。
+
+這次aicup比賽得到Private第七的分數，我的最佳模型為三個模型的Voting Ensemble，當初在訓練的時候，我是三個模型**各自訓練**，並使用PIL與numpy函式庫來進行Ensemble的處理，所以我這裡會分享三份Jupyter Notebook與三份模型，並額外付上Voting Ensemble的程式，然後如果程式使用上有什麼問題或Bug，也歡迎在Issues區留言提問。
 
 ## 比賽重點與遇到之問題
 
