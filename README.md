@@ -18,7 +18,8 @@
 * 讀取JSON檔並將座標轉換成黑白圖片，以供切割模型做標籤使用
 * 分別讀取切片圖和標籤圖，並使用字典將相應的鎖在一組
 * 使用Monai製作Transforms，以確保資料統一且適合模型學習
-* 在顯卡記憶體允許的情況下，測試百種Architectures與Encoders之組合
+* 使用編碼-解碼器結構(Encoder-decoder structure)
+* 在顯卡記憶體允許的情況下，測試百種Decoder與Encoders之組合
 * 選擇adabelief作為優化器
 * 語意分割可以理解為對每個點做分類，故使用語意分割專用的DiceLoss並搭配sigmoid作為損失函數
 * 訓練三種不同的模型，分別為efficientv2、eca_nfnet、efficientnet_b6，最後將這三個模型的結果進行Voting Ensemble，以獲得更佳的成績。
