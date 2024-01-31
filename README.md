@@ -26,7 +26,7 @@
 
 
 # Leaderboard
-|Public Score|Public Rank|Public Score|Private Rank|
+|Public Score|Public Rank|Private Score|Private Rank|
 |--|--|--|--|
 |0.898982|4 / 307|0.916327|7 / 307|
 
