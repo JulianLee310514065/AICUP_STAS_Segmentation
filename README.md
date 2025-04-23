@@ -2,7 +2,8 @@
 > **競賽網站**[**(Link)**](https://tbrain.trendmicro.com.tw/Competitions/Details/22)
 >
 > **完整程式說明報告**[**(Link)**](https://github.com/JulianLee310514065/AICUP_STAS_Segmentation/blob/main/%E7%A8%8B%E5%BC%8F%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6_%E8%82%BA%E8%85%BA%E7%99%8CII_TEAM_1015.pdf)
-
+>
+> Stima API [![Built with](https://img.shields.io/badge/Built%20with-Stima%20API-blueviolet?logo=robot)](https://api.stima.tech)
 
 AICUP 2022 肺腺癌病理切片影像競賽，官方同時舉辦圖像偵測和語意分割兩組支競賽，使用的是相同的圖檔。我參加的是語意分割部分，競賽著重於利用影像分割技術，專注於切割腫瘤氣道擴散（STAS）的輪廓，以準確找出肺腺癌患者病理切片中 STAS 的區域。
 
